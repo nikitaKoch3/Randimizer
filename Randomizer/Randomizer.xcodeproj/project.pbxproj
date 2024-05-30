@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11FDE972BFFD14D0013E467 /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11FDE962BFFD14D0013E467 /* RandomNumber.swift */; };
 		A1727FED2BF69C3800C7CEFA /* RandomizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1727FEC2BF69C3800C7CEFA /* RandomizerApp.swift */; };
 		A1727FEF2BF69C3800C7CEFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1727FEE2BF69C3800C7CEFA /* ContentView.swift */; };
 		A1727FF12BF69C3A00C7CEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1727FF02BF69C3A00C7CEFA /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A11FDE962BFFD14D0013E467 /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 		A1727FE92BF69C3800C7CEFA /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1727FEC2BF69C3800C7CEFA /* RandomizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerApp.swift; sourceTree = "<group>"; };
 		A1727FEE2BF69C3800C7CEFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 		A1727FE02BF69C3800C7CEFA = {
 			isa = PBXGroup;
 			children = (
+				A11FDE962BFFD14D0013E467 /* RandomNumber.swift */,
 				A1727FEB2BF69C3800C7CEFA /* Randomizer */,
 				A1727FEA2BF69C3800C7CEFA /* Products */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				A1727FEF2BF69C3800C7CEFA /* ContentView.swift in Sources */,
 				A1727FED2BF69C3800C7CEFA /* RandomizerApp.swift in Sources */,
+				A11FDE972BFFD14D0013E467 /* RandomNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
