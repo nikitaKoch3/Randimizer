@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10984692C233F190098E5D6 /* rollTheDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10984682C233F190098E5D6 /* rollTheDice.swift */; };
 		A11FDE972BFFD14D0013E467 /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11FDE962BFFD14D0013E467 /* RandomNumber.swift */; };
+		A13945D02C24BAC1002D35FC /* headOrTail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13945CF2C24BAC1002D35FC /* headOrTail.swift */; };
+		A13945D22C24C2DE002D35FC /* fortuneWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13945D12C24C2DE002D35FC /* fortuneWheel.swift */; };
 		A1727FED2BF69C3800C7CEFA /* RandomizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1727FEC2BF69C3800C7CEFA /* RandomizerApp.swift */; };
 		A1727FEF2BF69C3800C7CEFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1727FEE2BF69C3800C7CEFA /* ContentView.swift */; };
 		A1727FF12BF69C3A00C7CEFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1727FF02BF69C3A00C7CEFA /* Assets.xcassets */; };
@@ -15,7 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10984682C233F190098E5D6 /* rollTheDice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rollTheDice.swift; sourceTree = "<group>"; };
 		A11FDE962BFFD14D0013E467 /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
+		A13945CF2C24BAC1002D35FC /* headOrTail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headOrTail.swift; sourceTree = "<group>"; };
+		A13945D12C24C2DE002D35FC /* fortuneWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fortuneWheel.swift; sourceTree = "<group>"; };
 		A1727FE92BF69C3800C7CEFA /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1727FEC2BF69C3800C7CEFA /* RandomizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerApp.swift; sourceTree = "<group>"; };
 		A1727FEE2BF69C3800C7CEFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,7 +43,6 @@
 		A1727FE02BF69C3800C7CEFA = {
 			isa = PBXGroup;
 			children = (
-				A11FDE962BFFD14D0013E467 /* RandomNumber.swift */,
 				A1727FEB2BF69C3800C7CEFA /* Randomizer */,
 				A1727FEA2BF69C3800C7CEFA /* Products */,
 			);
@@ -54,6 +59,10 @@
 		A1727FEB2BF69C3800C7CEFA /* Randomizer */ = {
 			isa = PBXGroup;
 			children = (
+				A11FDE962BFFD14D0013E467 /* RandomNumber.swift */,
+				A13945CF2C24BAC1002D35FC /* headOrTail.swift */,
+				A13945D12C24C2DE002D35FC /* fortuneWheel.swift */,
+				A10984682C233F190098E5D6 /* rollTheDice.swift */,
 				A1727FEC2BF69C3800C7CEFA /* RandomizerApp.swift */,
 				A1727FEE2BF69C3800C7CEFA /* ContentView.swift */,
 				A1727FF02BF69C3A00C7CEFA /* Assets.xcassets */,
@@ -143,6 +152,9 @@
 				A1727FEF2BF69C3800C7CEFA /* ContentView.swift in Sources */,
 				A1727FED2BF69C3800C7CEFA /* RandomizerApp.swift in Sources */,
 				A11FDE972BFFD14D0013E467 /* RandomNumber.swift in Sources */,
+				A13945D22C24C2DE002D35FC /* fortuneWheel.swift in Sources */,
+				A10984692C233F190098E5D6 /* rollTheDice.swift in Sources */,
+				A13945D02C24BAC1002D35FC /* headOrTail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

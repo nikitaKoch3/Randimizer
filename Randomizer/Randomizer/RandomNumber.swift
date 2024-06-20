@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct RandomNumber: View {
-    @State private var startValue: String = " "
+    @State private var startValue: String = ""
     @State private var endValue: String = ""
-    @State private var result: String = " "
+    @State private var result: String = ""
     var body: some View {
         VStack {
             Spacer()
@@ -23,7 +23,7 @@ struct RandomNumber: View {
                 .foregroundColor(.blue)
                 .overlay {
                     Text("\(result)")
-                        .font(.custom("System", size: 100))
+                        .font(.largeTitle)
                         .fontWeight(.black)
                         .foregroundColor(.white)
                         
@@ -41,12 +41,12 @@ struct RandomNumber: View {
             .padding(50)
             
             Button {
-                result = "\(generate(start: startValue, end: endValue))"
-//                if let res = generate(start: startValue, end: endValue) {
-//                    result = "\(res)"
-//                } else {
-//                    result = "Fill the textfields"
-//                }
+                
+                if let res = generate(start: startValue, end: endValue) {
+                    result = "\(res)"
+                } else {
+                    result = "Fill the textfields"
+                }
             } label: {
                 RoundedRectangle(cornerRadius: 10)
                     .frame(width: 250, height: 60)
@@ -56,8 +56,23 @@ struct RandomNumber: View {
                             .foregroundColor(.white)
             }
             }
+            Button(action: {
+                clearTextFields()
+            }, label: {
+                Image(systemName: "xmark")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .frame(width: 60, height: 60)
+                    .cornerRadius(10)
+                    .foregroundColor(.white)
+                    .background(.blue)
+            })
         }
         
+    }
+    func clearTextFields() {
+        startValue = ""
+        endValue = ""
     }
     func generate(start: String?, end: String?) -> Int? {
         guard let start = start, let start = Int(start) else { return nil}

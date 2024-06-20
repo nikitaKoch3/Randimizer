@@ -9,44 +9,56 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Randomize")
-                .font(.largeTitle)
-            Spacer()
-            Button {
-                print()
-            } label: {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame( width: 250, height: 60)
-                    .overlay {
-                        Text("Random Number")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                    }
-                    }
+        NavigationView {
+            VStack(spacing: 20) {
+                Text("Randomize")
+                    .font(.largeTitle)
+                Spacer()
+                NavigationLink(destination: RandomNumber()) {
+                    Text("Random Rumber")
+                        .frame(width: 250, height: 60)
+                        .font(.title)
+                        .background(.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                }
+                        
+                    Button {
+                        print()
+                    } label: {
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame( width: 250, height: 60)
+                        .overlay {
+                            Text("Roll the Dice")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                        }
+                }
                 Button {
                     print()
                 } label: {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame( width: 250, height: 60)
-                    .overlay {
-                        Text("Roll the Dice")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                    }
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame( width: 250, height: 60)
+                        .overlay {
+                            Text("Heads OR Tails")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                        }
+                }
+                Button {
+                    print()
+                } label: {
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame( width: 250, height: 60)
+                        .overlay {
+                            Text("Fortune Wheel")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                        }
+                }
+
+                Spacer()
             }
-            Button {
-                print()
-            } label: {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame( width: 250, height: 60)
-                    .overlay {
-                        Text("Random word")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                    }
-            }
-            Spacer()
         }
         
     }
